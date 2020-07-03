@@ -1,0 +1,2 @@
+- Do it in django so I can use db objects (the tags), with dynamic jinja.
+- Use print.css

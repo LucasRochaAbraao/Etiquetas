@@ -1,0 +1,6 @@
+colacril/
+email/
+!email/.gitkeep
+log/
+!log/.gitkeep
+src/__pycache__
