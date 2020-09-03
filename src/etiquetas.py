@@ -67,11 +67,13 @@ class Etiquetas():
 
     # criar SSIDs
     def get_ssid_comum(self, incremento):
-        return "QUICK/+FIBRA_" + str(incremento)
+        return "QUICKFIBRA " + str(incremento)
     def get_ssid_bgn(self, incremento):
-        return "QUICK/+FIBRA_" + str(incremento) + '-2.4GHz'
+        #return "QUICKFIBRA " + str(incremento) + ' 2.4GHz'
+        return "QUICKFIBRA 2.4GHz " + str(incremento)
     def get_ssid_ac(self, incremento):
-        return "QUICK/+FIBRA_" + str(incremento) + '-5GHz'
+        #return "QUICKFIBRA " + str(incremento) + ' 5GHz'
+        return "QUICKFIBRA 5GHz " + str(incremento)
 
     def gerar_alpha(self, strings):
         # recebe a lista de letras e retorna uma nova lista com 4 letras aleatórias
