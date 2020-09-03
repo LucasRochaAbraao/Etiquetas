@@ -1,6 +1,5 @@
 # Etiquetas
-Atualmente trabalho numa ISP onde há uma necessidade de criar etiquetas para colar em roteadores instalados nas residências dos clientes. Como os roteadores vão préconfigurados com configuração personalizada, precisávamos de uma forma de informar os clientes qual o SSID e senha do wifi sempre que precisarem. Apartir dessa necessidade, desenvolvi esse script, que gera qualquer quantidade de etiquetas, além de gerar uma senha aleatória para cada uma. Por enquanto, o script funciona apenas pelo terminal. Mas estou no processo (lento, pois meu foco atual está em outros projetos) de migrar para uma aplicação web utilizando django.
-
+Atualmente trabalho numa ISP onde há uma necessidade de criar etiquetas para colar em roteadores instalados nas residências dos clientes. Como os roteadores vão préconfigurados com configuração personalizada, precisávamos de uma forma de informar os clientes qual o SSID e senha do wifi sempre que precisarem. Apartir dessa necessidade, desenvolvi esse script, que gera qualquer quantidade de etiquetas, além de gerar uma senha aleatória para cada uma. Por enquanto, o script funciona apenas pelo terminal. Mas estou no processo de criar um bot no telegram para automatizar a criação das etiquetas (lento, pois meu foco atual está em outros projetos). Eventualmente, vou migrar para uma aplicação web utilizando django.
 Segue abaixo como instalar, configurar e executar.
 
 
@@ -16,6 +15,14 @@ pipenv install openpyxl
 Para finalizar, dê permissão de execução ao script principal.
 ```
 sudo chmod +x email_aviso.py
+```
+Outra opção seria usando o arquivo requirements.txt:
+```
+pip3 install -r requirements.txt
+```
+ou
+```
+pipenv install -r requirements.txt
 ```
 
 
