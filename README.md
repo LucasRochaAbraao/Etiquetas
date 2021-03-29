@@ -1,16 +1,19 @@
 # Etiquetas
-Atualmente trabalho numa ISP onde há uma necessidade de criar etiquetas para colar em roteadores instalados nas residências dos clientes. Como os roteadores vão préconfigurados com configuração personalizada, precisávamos de uma forma de informar os clientes qual o SSID e senha do wifi sempre que precisarem. Apartir dessa necessidade, desenvolvi esse script, que gera qualquer quantidade de etiquetas, além de gerar uma senha aleatória para cada uma. Por enquanto, o script funciona apenas pelo terminal. Mas estou no processo de criar um bot no telegram para automatizar a criação das etiquetas (lento, pois meu foco atual está em outros projetos). Eventualmente, vou migrar para uma aplicação web utilizando django.
+Atualmente trabalho numa ISP (QUICK FIBRA) onde há uma necessidade de criar etiquetas para colar em roteadores instalados nas residências dos clientes. Como os roteadores vão pré-configurados com configuração personalizada e única em cada roteador, precisávamos de uma forma de informar os clientes qual o SSID e senha do wifi sempre que precisarem. Apartir dessa necessidade, desenvolvi esse script, que gera qualquer quantidade de etiquetas, além de gerar uma senha aleatória para cada uma. Por enquanto, o script funciona apenas pelo terminal. Mas pretendo migrar para uma aplicação web utilizando django (processo lento, pois meu foco atual está em outros projetos). Eu até comecei a fazer um bot no telegram para gerenciar isso, mas acredito que será mais prático uma aplicação web mesmo. Vou manter o código do bot para referências futuras, mas não vou continuar o desenvolvimento dele por aqui.
 Segue abaixo como instalar, configurar e executar.
 
 
 ## Instalar
-Primeiro é necessário instalar o pacote de gerenciamento de ambientes virtuais `pipenv`, para um melhor gerenciamento dos pacotes de seus projetos.
+Primeiro é necessário instalar o pacote de gerenciamento de ambientes virtuais `python3-venv`, para um melhor gerenciamento dos pacotes de seus projetos.
 ```
-pip3 install pipenv
+sudo apt install python3-venv
+python3 -m venv venv
+source venv/bin/activate
+python -m pip install --upgrade pip
 ```
-Em seguida, instale o pacote `openpyxl`
+Em seguida, instale os pacotes no `requirements.txt`
 ```
-pipenv install openpyxl
+pip install -r requirements.txt
 ```
 Para finalizar, dê permissão de execução ao script principal.
 ```
