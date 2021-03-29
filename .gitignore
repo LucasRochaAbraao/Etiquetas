@@ -7,3 +7,4 @@ src/__pycache__
 venv/
 bot/token_config.py
 bot/__pycache__
+.vscode/
