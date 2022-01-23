@@ -8,3 +8,4 @@ venv/
 bot/token_config.py
 bot/__pycache__
 .vscode/
+templates/dimension.pdf
